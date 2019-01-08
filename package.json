@@ -29,7 +29,7 @@
     "node-sass": "^4.9.2",
     "proxy": "^0.2.4",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "react-dom": "^16.7.0",
     "react-router-dom": "^4.3.1",
     "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
