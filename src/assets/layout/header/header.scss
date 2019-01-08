@@ -1,0 +1,103 @@
+.header{
+  background-color: #523737;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.header-top{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  &__icons{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    box-sizing:border-box;
+    padding: 5px 10px;
+    color: #ffffff;
+  }
+  &__icons svg{
+    width: 13px;
+    color: inherit;
+
+
+
+  }
+  &__time{
+    color: #ffffff;
+    font-size: 14px;
+  }
+  &__state{
+    color: #fff;
+    margin-left: 8px;
+  }
+  &__state:first-child{
+    margin: 0;
+  }
+}
+.header-bottom{
+  padding: 0 20px;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  height: 27px;
+  &__tool{
+    color: #ffffff;
+    text-transform: capitalize;
+  }
+  &__number{
+    color: #ffe732;
+    padding-left: 3px;
+  }
+  &__tool svg{
+    width: 15px;
+    color: inherit;
+  }
+  .header-bottom__tool:first-child{
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+.header{
+  &.type-conversation, &.type-profile{
+  }
+}
+.header.type-profile{
+  background-color: transparent;
+  .header-top__state{
+    color: #c1c1c1;
+  }
+  .header-top{
+    svg{
+      color: #fff;
+    }
+  }
+  .header-bottom{
+    svg{
+      color: #fff;
+    }
+    .header-bottom__tool:first-child svg{
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+
+.header.type-chat{
+  background-color: #A6C0D4;
+  border-bottom: 1px solid #859AAA;
+}
+.header.type-chat{
+  .header-top, .header-bottom{
+    svg{
+      color: #333333;
+    }
+    svg + svg{
+      margin-left: 10px;
+    }
+    span{
+      color: #333333;
+    }
+  }
+}
